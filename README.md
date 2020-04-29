@@ -2,15 +2,27 @@
 
 Like those wallpapers that you see on that Chromecast or Google Home device? Now this utility will allow you download them!
 
-# Running
+# Getting files
+
+## Download Zip archive
+
+[GDrive Link](https://drive.google.com/drive/u/1/folders/1BoQpbMud89BNn6c-JxDBAXKVFGQJiuAF)
+
+## Running
+
+### In an IDE
 
 1. Make sure that you have Maven installed and an IDE
 
-2. run  `mvn install` to get GSON
+2. Clone the repository/ download&extract file
 
-3.  Add GSON as a dependency
+3. Run `mvn install` to get GSON and commons-io
 
-4.  run [main.java](src/main/main.java)
+4. Add GSON & commons-io  as a dependency
+
+5. run [main.java](src/main/main.java)
+
+6. Images will be available in `{projectDirectory}/images/`
 
 # Credits
 
@@ -22,6 +34,4 @@ All pictures are credit to their respective authors.
 
 This project falls under GPL v3, unless noted.
 
-- Maven falls under Apache
-
-- GSON fall
+- Maven, GSON, common-io all fall under Apache.
