@@ -19,7 +19,7 @@ public class main {
             fileName = "images/" + url.substring(url.lastIndexOf("/") + 1);
             System.out.println(fileName);
             try {
-                FileUtils.copyURLToFile(new URL(url), new File(fileName));
+                FileUtils.copyURLToFile(new URL(url), new File(fileName),15000,30000);
             } catch (Exception file) {
                 System.out.println("Could not download file at url: \n" + url + "\nfile:" + fileName + "\n ...Skipping file(probably file itself is not available");
                 urlErrors.add(url);
@@ -28,7 +28,7 @@ public class main {
         for (String error : urlErrors) {
             System.out.println(error);
         }
-        System.out.println("ERROR \n There were errors at the above URLs. This is probably a file that was not able to download. " +
+        System.out.println("ERROR \n There were errors at the above URLs( "+urlErrors.size()+" of them). This is probably a file that was not able to download. " +
                 "Check these files out if you so wish \n All downloaded the files are available in the images folder");
     }
 }
