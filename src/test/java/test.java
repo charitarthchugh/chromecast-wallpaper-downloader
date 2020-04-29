@@ -5,7 +5,6 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.net.URL;
 
@@ -21,8 +20,8 @@ public class test {
             System.out.println(fileName);
             try {
                 FileUtils.copyURLToFile(new URL(url),new File(fileName));
-            }catch (FileNotFoundException file){
-                System.out.println("Could not download file at url: \n"+url+"\nfile:" +fileName+"\n ...Skipping file(probably file itself is not available");
+            }catch (Exception file){
+                System.out.println("Could not download file at url: \n"+url+"\nfile:" +fileName+"\n ...Skipping file(probably file itself is not available or it is not found)");
             }
         }
     }
