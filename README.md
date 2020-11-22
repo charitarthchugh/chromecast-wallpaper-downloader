@@ -28,10 +28,8 @@ Like those wallpapers that you see on that Chromecast or Google Home device? Now
 
 Thanks to [@dconnoly'](https://github.com/dconnolly) s [Chromecast Backgrounds](https://github.com/dconnolly/chromecast-backgrounds/) in make this possible! I used his [backgrounds.json](https://github.com/dconnolly/chromecast-backgrounds/blob/master/backgrounds.json) file to retrieve all the URLS.
 
-## Licencing
+## License
 
 All pictures are credit to their respective authors. 
 
-This project falls under GPL v3, unless noted.
-
-- Maven, GSON, common-io all fall under Apache.
+This project and dependencies fall under the Apache license, v2.0.
